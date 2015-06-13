@@ -29,7 +29,7 @@ public class SecureSystem {
 	 
 	 public static void OpenFile(String arg, ReferenceMonitor refMon){
 		 // The name of the file to open.
-	        String fileName = "/Users/DanielGarza/Documents/workspace/Security/src/" + arg;
+	        String fileName = "/u/dgza88/CS361/Security/src/" + arg;
 
 	        // This will reference one line at a time
 	        String line = null;

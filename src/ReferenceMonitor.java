@@ -55,6 +55,9 @@ public class ReferenceMonitor {
 	
 	public boolean isValid(){
 		String command = inst.getCommand().toLowerCase();
+		if(!Subjects.containsKey(inst.getSubject()) || !Objects.containsKey(inst.getObject())){
+			return false;
+		}
 		if(command.equals("read")){
 			//subject dominates object
 			if(Subjects.get(inst.getSubject()).getLEVEL() >= Objects.get(inst.getObject()).getLEVEL() ){
